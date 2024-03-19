@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Nunito:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+html{
+  height: 100%;
+}
+body{
+    height: 100%;
+    font-family: 'Nunito', sans-serif;
+}
+.mobile-view{
+    display: grid;
+    margin-top: 0%;
+    
+    min-height: 100%;
+    overflow: hidden;
+}
+
+/*menu design*/
+@media only screen and (min-width : 820px) {
+  
+  #mobile-top{
+    background: whitesmoke;
+  }
+  .logo-box{
+    padding: 0 30px;
+  }
+  #mobile-top img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: -20px;
+  }
+  .logo-box p{
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: indianred;
+    margin: 0;
+  }
+  .border{
+    width: 80px;
+    height: 4px;
+    margin: 3px 0;
+    margin-bottom: 30px;
+    border-radius: 2px;
+    background: coral;
+  }
+  .top-menu a{
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 8px 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 12px 0;
+    color: rgb(128, 129, 129);
+    font-weight: 300;
+    
+  }
+  .top-menu a:hover{
+    background: rgb(250, 212, 218);
+  }
+  #m-food-items{
+   background: whitesmoke;
+   overflow: scroll;
+   height: calc(100vh - 86px);
+  }
+  #category-header{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-top: 40px;
+   padding-bottom: 10px;
+   position: sticky;
+   top: 0;
+   background:whitesmoke ;
+   z-index: 1;
+  }
+  ::-webkit-scrollbar{
+   display: none;
+  }
+  #category-header .address{
+   font-size: 20px;
+  }
+  #map{
+   font-size: 25px;
+   color: red;
+  }
+  .your-address{
+   border: 1px solid indianred;
+   color: indianred;
+   padding: 5px 10px;
+   border-radius: 5px;
+   width: 150px;
+   overflow: hidden;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+   cursor: pointer;
+   text-transform: capitalize;
+  }
+  .add-box i{
+   font-size: 20px;
+  }
+  #categoey-header select{
+   width: 150px;
+   overflow: hidden;
+   border: none;
+   outline: none;
+   background:none;
+   color: rosybrown;
+   padding: 0 5px;
+  }
+  .food-items{
+   display: none;
+  }
+  .top-menu i,.user i{
+   font-size: 18px;
+   margin: 0 16px;
+   border: 1px solid crimson;
+   padding: 8px 16px;
+   color: crimson;
+   border-radius: 20px;
+   cursor: pointer;
+  }
+  .top-menu i:active,.user i:active{
+   color: white;
+   background: crimson;
+  }
+  #pizza,#side,#pasta,#burger,#bread,#shakes{
+   margin-top: 50px;   
+   font-family: 'Aclonica', sans-serif;
+  }
+  #pizza #item-card,#burger #item-card{
+   background: rgb(218, 253, 188);
+  }
+  #pasta #item-card,#shakes #item-card{
+   background: rgb(221, 243, 243);
+  }
+  #category-name,.item-menu{
+   margin: 10px;
+   font-size: 35px;   
+   color: coral;
+   font-family: 'Aclonica', sans-serif;
+  }
+  #item-card{
+   width: 190px;
+   height: 220px;
+   padding: 10px;
+   margin: 10px;
+   display: inline-block;
+   border-radius: 5px;
+   background: rgb(253, 221, 226);
+   cursor: pointer;
+   transition: 0.5s all ease-in-out;
+   font-family: 'Nunito', sans-serif;
+  }
+  #item-card:hover img{
+   transform: scale(1.2);
+  }
+  #card-top{
+   display: flex;
+   margin: 5px 0;
+   justify-content: space-between;
+  }
+  #rating{
+   padding: 5px;
+   color: goldenrod;
+   background: black;
+   font-size: 10px;
+   border-radius: 10px;
+  }
+  .fa-heart-o{
+   padding: 2px;
+   border-radius: 50%;
+   background: white;
+   cursor: pointer;
+  }
+  .toggle-heart{
+   background: orangered;
+   color: white; 
+  }
+  #item-card img{
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   margin: auto;
+   display: block;
+   margin-bottom: 15px;
+   transition: 0.5s all ease-in-out;
+  }
+  #item-name{
+   margin: 5px 0;
+   font-weight: 600;
+   color: darkslategray;
+   font-size: 16px;
+  }
+  #item-price{
+   margin: 0;
+   color: rgb(2, 27, 27);
+   font-weight: 550;
+   font-size: 13px;
+  }
+  .food-items{
+   display: none;
+  }
+  .cart-toggle{
+   display: none;
+  } 
+  #cart-page{
+   background: white;
+   margin: 20px 10px;
+   margin-right: 30px;
+   padding: 20px 30px;
+   padding-bottom: 30px;
+   position: relative;
+  }
+  #cart-title{
+   font-size: 35px;
+   margin: 0;
+   font-family: 'Aclonica', sans-serif;
+   color: indianred;
+  }
+  #cart-page table{
+   width: 100%;
+   margin-top: 20px;
+   text-align: center;
+  }
+  #cart-page table thead td{
+   font-size: 25px;
+   padding-bottom: 10px;
+  }
+  .cart-btn{
+   outline: none;
+   border: none;
+   background: crimson;
+   color: white;
+   padding: 10px 25px;
+   border-radius: 20px;
+   font-size: 18px;
+   text-transform: uppercase;
+   bottom: 30px;
+   margin: 15px 0;
+   cursor: pointer;
+  }
+  .cart-btn:active{
+   color: crimson;
+   background: none;
+   border: 1px solid crimson;
+  }
+  #cart-page table tbody td{
+   padding: 10px 0;
+   font-size: 20px;
+  }
+  #cart-page table tbody button{
+   outline: none;
+   border: none;
+   font-size: 16px;
+   background: none;
+   background: lightcoral;
+   color: white;
+   border-radius: 3px;
+   cursor: pointer;
+   margin: 0 5px;
+   padding: 3px 8px;
+  }
+  #cart-page table tbody img{
+   width: 75px;
+   height: 75px;
+   border-radius: 50px;
+  }
+  #checkout{
+   text-align: center;
+   margin: 40px auto;
+   border-radius: 5px;
+   background: white;
+   padding: 10px 20px;
+  }
+  #checkout p{
+   margin: 15px 0;
+   float: right;
+  }
+  #total-price,#total-item{
+   font-size: 25px;
+   color: indianred;
+  }
+  #delievery{
+   font-size: 20px;
+   color: limegreen;
+  }
+  #cart{
+   background: whitesmoke;
+   padding-right: 30px;
+   overflow-y: scroll;
+  }
+  .item-menu{
+   margin: 0;
+   font-size: 30px;
+   margin-top: 40px;
+   color: indianred;
+   background: whitesmoke;
+  }
+  .list-card{
+   display: flex;
+   align-items: center;
+   margin-top: 15px;
+   border-radius: 25px;
+   cursor: pointer;
+   transition: 0.3s all ease-in-out;
+  }
+  .list-card:hover{
+   background: rgb(255, 216, 222);
+  }
+  .list-card:hover img{
+   transition: 0.5s all ease-in-out;
+   transform: scale(1.2);
+  }
+  .list-card img{
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+  }
+  .list-name{
+   font-size: 20px;
+   margin: 0 10px;
+   text-decoration: none;
+   text-transform: capitalize;
+   color: rgb(94, 43, 43);
+  }
+  #category-list{
+  
+  }
+  .taste-header{
+   padding-top: 40px;
+   padding-bottom: 10px;
+   position: sticky;
+   top: 0;
+   background: whitesmoke;
+  }
+}
